@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Shopping Cart</title>
+
+    <link rel="stylesheet" href="css/base.css">
+
+    <link rel="stylesheet" href="css/navbar.css">
+
+    <link rel="stylesheet" href="css/cart.css">
+
+</head>
+
+<body>
+
+
+<!-- NAVBAR -->
+
+<header class="navbar">
+
+    <div class="navbar__logo">
+        Amazon Clone
+    </div>
+
+    <div class="navbar__links">
+
+        <a href="index.html">Home</a>
+
+        <a href="products.html">Products</a>
+
+        <a href="cart.html" class="navbar__cart">
+
+            Cart
+
+            <span class="cart-badge">
+                0
+            </span>
+
+        </a>
+
+    </div>
+
+</header>
+
+
+
+<!-- CART CONTAINER -->
+
+<div class="cart-container">
+
+
+    <!-- LEFT SIDE -->
+
+    <div class="cart-left">
+
+        <h1 class="cart-title">
+            Shopping Cart
+        </h1>
+
+        <table class="cart-table">
+
+            <thead>
+
+                <tr>
+
+                    <th>Product</th>
+
+                    <th>Price</th>
+
+                    <th>Quantity</th>
+
+                    <th>Total</th>
+
+                    <th>Action</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="cart-body">
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+<br>
+
+    <!-- RIGHT SIDE -->
+
+    <div class="cart-summary">
+
+        <h2>Order Summary</h2>
+
+        <div class="summary-row">
+
+            <span>Subtotal</span>
+
+            <span>
+                ₹<span id="cart-total">0</span>
+            </span>
+
+        </div>
+
+        <div class="summary-row">
+
+            <span>Shipping</span>
+
+            <span>FREE</span>
+
+        </div>
+
+        <div class="summary-row total-row">
+
+            <span>Total</span>
+
+            <span>
+                ₹<span id="final-total">0</span>
+            </span>
+
+        </div>
+        <br>
+
+        <button class="checkout-btn">
+
+            Proceed to Checkout
+
+        </button>
+
+    </div>
+
+</div>
+
+
+<script src="js/data.js"></script>
+
+<script src="js/cart.js"></script>
+
+</body>
+
+</html>

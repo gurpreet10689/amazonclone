@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amazon Frontend Clone</title>
+
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/products.css">
+</head>
+<body>
+
+<header class="navbar">
+
+<div class="navbar__logo">
+Amazon Clone
+</div>
+
+<div class="navbar__search">
+<input type="text" placeholder="Search products">
+<button>Search</button>
+</div>
+
+<div class="navbar__links">
+<a href="index.html">Home</a>
+<a href="products.html">Products</a>
+<a href="cart.html" class="navbar__cart">
+Cart
+<span class="cart-badge">0</span>
+</a>
+</div>
+
+</header>
+
+<section class="hero">
+<h1><center>Welcome to Amazon Frontend Clone</center></h1>
+<br>
+<h3><p><b>Best products at best prices</b></p></h3>
+</section>
+
+<section class="featured-products container">
+
+<h2>Featured Products</h2>
+
+<div class="product-grid"></div>
+
+</section>
+
+<script src="js/data.js"></script>
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+
+</body>
+</html>

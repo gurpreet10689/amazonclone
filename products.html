@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/products.css">
+</head>
+<body>
+
+<header class="navbar">
+
+<div class="navbar__logo">Amazon Clone</div>
+
+<div class="navbar__links">
+<a href="index.html">Home</a>
+<a href="cart.html">Cart</a>
+</div>
+
+</header>
+
+<main class="products-layout container">
+
+<aside class="filters">
+
+<h3>Filters</h3>
+
+<label>
+<input type="checkbox" class="filter-category" value="electronics">
+Electronics
+</label>
+
+<label>
+<input type="checkbox" class="filter-category" value="fashion">
+Fashion
+</label>
+
+<br><br>
+
+<label>Maximum Price</label>
+<input type="range" id="filter-price" min="1000" max="50000" value="50000">
+
+<br><br>
+
+<label>Minimum Rating</label>
+<select id="filter-rating">
+<option value="0">All</option>
+<option value="3">3+</option>
+<option value="4">4+</option>
+</select>
+
+</aside>
+
+<section class="product-grid"></section>
+
+</main>
+
+<script src="js/data.js"></script>
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+
+</body>
+</html>
