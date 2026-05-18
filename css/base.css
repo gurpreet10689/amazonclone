@@ -1,0 +1,38 @@
+:root {
+
+--color-primary: #131921;
+--color-secondary: #232F3E;
+--color-accent: #FF9900;
+--color-bg: #EAEDED;
+--color-card: #ffffff;
+--color-text: #111111;
+
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: Arial, sans-serif;
+background: var(--color-bg);
+color: var(--color-text);
+}
+
+.container {
+max-width: 1280px;
+margin: auto;
+padding: 20px;
+}
+
+.btn {
+padding: 10px 15px;
+border: none;
+cursor: pointer;
+}
+
+.btn--cart {
+background: #FFD814;
+}
