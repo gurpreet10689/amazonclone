@@ -1,149 +1,179 @@
-<!DOCTYPE html>
-<html lang="en">
+.container {
+padding: 20px;
+}
 
-<head>
+h1 {
+margin-bottom: 20px;
+}
 
-    <meta charset="UTF-8">
+table {
+width: 100%;
+border-collapse: collapse;
+background: white;
+}
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+th,
+td {
+border: 1px solid #ddd;
+padding: 10px;
+text-align: center;
+}
 
-    <title>Shopping Cart</title>
+button {
+padding: 5px 10px;
+cursor: pointer;
+}
 
-    <link rel="stylesheet" href="css/base.css">
+/* RIGHT SIDE ORDER SUMMARY */
 
-    <link rel="stylesheet" href="css/navbar.css">
+.cart-summary{
 
-    <link rel="stylesheet" href="css/cart.css">
+    background:#ffffff;
 
-</head>
+    padding:30px;
 
-<body>
+    border-radius:18px;
 
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.08);
 
-<!-- NAVBAR -->
+    height:fit-content;
 
-<header class="navbar">
+    position:sticky;
 
-    <div class="navbar__logo">
-        Amazon Clone
-    </div>
+    top:100px;
 
-    <div class="navbar__links">
+    border:1px solid #e5e5e5;
+}
 
-        <a href="index.html">Home</a>
 
-        <a href="products.html">Products</a>
 
-        <a href="cart.html" class="navbar__cart">
+/* TITLE */
 
-            Cart
+.cart-summary h2{
 
-            <span class="cart-badge">
-                0
-            </span>
+    font-size:28px;
 
-        </a>
+    margin-bottom:25px;
 
-    </div>
+    color:#111827;
 
-</header>
+    font-weight:700;
 
+    border-bottom:2px solid #f3f4f6;
 
+    padding-bottom:15px;
+}
 
-<!-- CART CONTAINER -->
 
-<div class="cart-container">
 
+/* SUMMARY ROW */
 
-    <!-- LEFT SIDE -->
+.summary-row{
 
-    <div class="cart-left">
+    display:flex;
 
-        <h1 class="cart-title">
-            Shopping Cart
-        </h1>
+    justify-content:space-between;
 
-        <table class="cart-table">
+    align-items:center;
 
-            <thead>
+    margin-bottom:18px;
 
-                <tr>
+    font-size:18px;
 
-                    <th>Product</th>
+    color:#374151;
+}
 
-                    <th>Price</th>
 
-                    <th>Quantity</th>
 
-                    <th>Total</th>
+/* TOTAL ROW */
 
-                    <th>Action</th>
+.total-row{
 
-                </tr>
+    margin-top:25px;
 
-            </thead>
+    padding-top:20px;
 
-            <tbody id="cart-body">
+    border-top:2px dashed #d1d5db;
 
-            </tbody>
+    font-size:28px;
 
-        </table>
+    font-weight:700;
 
-    </div>
+    color:#111827;
+}
 
-<br>
 
-    <!-- RIGHT SIDE -->
 
-    <div class="cart-summary">
+/* TOTAL PRICE */
 
-        <h2>Order Summary</h2>
+.total-row span:last-child{
 
-        <div class="summary-row">
+    color:#B12704;
+}
 
-            <span>Subtotal</span>
 
-            <span>
-                ₹<span id="cart-total">0</span>
-            </span>
 
-        </div>
+/* CHECKOUT BUTTON */
 
-        <div class="summary-row">
+.checkout-btn{
 
-            <span>Shipping</span>
+    width:100%;
 
-            <span>FREE</span>
+    margin-top:30px;
 
-        </div>
+    padding:16px;
 
-        <div class="summary-row total-row">
+    border:none;
 
-            <span>Total</span>
+    border-radius:12px;
 
-            <span>
-                ₹<span id="final-total">0</span>
-            </span>
+    background:linear-gradient(
+        135deg,
+        #FFD814,
+        #F7CA00
+    );
 
-        </div>
-        <br>
+    color:#111827;
 
-        <button class="checkout-btn">
+    font-size:18px;
 
-            Proceed to Checkout
+    font-weight:700;
 
-        </button>
+    cursor:pointer;
 
-    </div>
+    transition:0.3s ease;
 
-</div>
+    box-shadow:
+        0 6px 18px rgba(255,216,20,0.35);
+}
 
 
-<script src="js/data.js"></script>
 
-<script src="js/cart.js"></script>
+/* BUTTON HOVER */
 
-</body>
+.checkout-btn:hover{
 
-</html>
+    transform:translateY(-3px);
+
+    background:linear-gradient(
+        135deg,
+        #F7CA00,
+        #FFB300
+    );
+
+    box-shadow:
+        0 10px 24px rgba(255,179,0,0.45);
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .cart-summary{
+
+        position:static;
+    }
+}
